@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+.mycontainer{
+ @apply container mx-auto   ;   
+}
+/* .long-url-text {
+  @apply break-word;
+  word-break: break-all;
+  white-space: normal;
+  overflow: hidden;
+  display: block;
+} */
+/* 
+.table-wrapper {
+  @apply overflow-x: auto;
+}
+ */
