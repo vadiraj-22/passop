@@ -17,10 +17,10 @@ const Navbar = () => {
                 </li>
             </ul> */}
 
-                <button className='flex gap-2 justify-center items-center bg-green-500 rounded-full px-2 py-1 font-bold '>
+                <a href="https://github.com/vadiraj-22/passop" target="_blank" rel="noopener noreferrer" className='flex gap-2 justify-center items-center bg-green-500 rounded-full px-2 py-1 font-bold '>
                     <img className='w-10 ' src="/icons/github.svg" alt="github logo" />
                     GitHub
-                </button>
+                </a>
             </div>
 
         </nav>
