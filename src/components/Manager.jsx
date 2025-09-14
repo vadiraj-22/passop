@@ -170,8 +170,8 @@ const Manager = () => {
           </lord-icon> Save </button>
         </div>
         <div>
-          <h2 className='font-bold text-xl flex justify-center mt-7 py-3'>Your Passwords</h2>
-          {passwordArray.length === 0 && <div>No passwords to show </div>}
+          <h2 className='font-bold text-2xl flex justify-center mt-7 py-3'>Your Passwords</h2>
+          {passwordArray.length === 0 && <div className='flex items-center justify-center'>No passwords to show </div>}
           {passwordArray.length != 0 && (
   
           // <div className='table-wrapper'>

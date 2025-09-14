@@ -67,25 +67,21 @@ const PasswordCard = ({ passwords: propsPasswords, toggleVisibility: propsToggle
             <div className=" px-4 py-6">
                 <ToastContainer position="top-right" autoClose={2000} hideProgressBar={false} newestOnTop={false} closeOnClick rtl={false} pauseOnFocusLoss draggable pauseOnHover theme="dark" transition={Bounce} />
 
-                <div className="flex items-center justify-between mb-4">
-                    <h2 className="text-xl font-semibold">{view === 'list' ? 'Your Passwords' : 'Add Password'}</h2>
-
-                </div>
 
                 {view === 'list' && (
                     <>
-                        {passwords.length === 0 ? (
-                            <div className="text-center text-sm text-gray-600">No passwords to show</div>
-                        ) : (
+
                             <div className="space-y-4">
                                 {passwords.map((item) => (
                                     <div key={item.id} className="bg-white border border-green-100 rounded-xl shadow-sm p-4 flex flex-col gap-3">
                                         <div className="flex items-start justify-between gap-3">
                                             <a className="text-sm font-medium text-green-700 break-words truncate max-w-[70%] min-w-0" href={item.site} target="_blank" rel="noreferrer">{item.site}</a>
-                                            <div className="flex items-center gap-2 flex-shrink-0">
-                                                <button onClick={() => copyText(item.site)} className="p-1 rounded-full bg-green-50 hover:bg-green-100 w-8 h-8 flex items-center justify-center">
-                                                    <img src="icons/github.svg" alt="copy" width={14} className="max-w-full" />
-                                                </button>
+                                            <div className="flex items-center gap-2 flex-shrink-0"> 
+                                                <lord-icon
+                                                    src="https://cdn.lordicon.com/xuoapdes.json"
+                                                    trigger="hover"
+                                                    style={{ width: "20px", height: "20px" }}>
+                                                </lord-icon>
                                             </div>
                                         </div>
 
@@ -132,7 +128,7 @@ const PasswordCard = ({ passwords: propsPasswords, toggleVisibility: propsToggle
                                     </div>
                                 ))}
                             </div>
-                        )}
+                        
                     </>
                 )}
 
