@@ -1,7 +1,7 @@
 
 const Navbar = () => {
     return (
-        <nav className=' bg-slate-700 flex h-16 items-center '>
+        <nav className=' bg-slate-800 flex h-18 items-center fixed w-full z-10 '>
             <div className="mycontainer md:px-30 px-5 flex justify-between   items-center ">
                 <div className=' logo font-bold text-2xl text-white flex items-center'>
                     <span className='text-green-500'>&lt;</span>

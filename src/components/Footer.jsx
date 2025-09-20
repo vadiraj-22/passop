@@ -1,7 +1,7 @@
 
 const Footer = () => {
   return (
-    <div className="bg-slate-700 lg:flex flex-row justify-center  py-5  bottom-0 items-center w-full gap-7 text-white">
+    <div className="bg-slate-800 lg:flex flex-row justify-center  py-5  bottom-0 items-center w-full gap-7 text-white">
       <div className=" logo font-bold text-2xl flex   text-white justify-center lg:flex items-center">
         <span className="text-green-500">&lt;</span>
         Pass
